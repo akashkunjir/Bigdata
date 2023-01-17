@@ -24,7 +24,8 @@ public class Marks {
 			String name = st.nextToken();
 			int marks = Integer.parseInt(st.nextToken());
 			String cls = st.nextToken();
-			if(marks >=60)
+			//if(marks >=60)
+			if(cls.equals("TY"))
 				context.write(new Text("Marks"),new IntWritable(marks));
 		}
 	}
