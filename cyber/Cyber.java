@@ -58,7 +58,7 @@ public class Cyber{
 		conf.setOutputValueClass(FloatWritable.class);
 		conf.setMapperClass(LogMapper.class);
 		conf.setReducerClass(LogReducer.class);
-		conf.setInputFormat(InputFormat.class);
+		conf.setInputFormat(	.class);
 		conf.setOutputFormat(OutputFormat.class);
 		FileInputFormat.setInputPaths(conf,new Path(args[0]));
 		FileOutputFormat.setOutputPath(conf,new Path(args[1]));
